@@ -20,6 +20,12 @@
     @apply text-6xl
     leading-[72px];
   }
+  h2 {
+    @apply text-[14px] leading-[20px]  text-gray-600;
+  }
+  h5 {
+    @apply text-[30px] leading-[36px]  text-gray-900;
+  }
 }
 
 @layer components {

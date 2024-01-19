@@ -1,10 +1,12 @@
-import { Header, Hero } from "@/components";
+import { About, Header, Hero, Skills } from "@/components";
 
 export default function Home() {
   return (
-    <div className="max-w-1440px">
+    <div>
       <Header />
       <Hero />
+      <About />
+      <Skills />
     </div>
   );
 }
