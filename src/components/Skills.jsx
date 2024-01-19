@@ -1,4 +1,4 @@
-import { Javascript } from "./icons/icon";
+import { Javascript, Next } from "./icons/icon";
 
 export function Skills() {
   return (
@@ -12,7 +12,7 @@ export function Skills() {
           <div>
             <Javascript />
           </div>
-          <div></div>
+          <div><Next/></div>
         </div>
       </div>
     </div>
