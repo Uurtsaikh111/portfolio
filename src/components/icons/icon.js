@@ -2,3 +2,16 @@ export * from "./Location";
 export * from "./Javascript";
 export * from "./Typescript";
 export * from "./Next";
+export * from "./React"
+export * from "./Cypress"
+export * from "./Express"
+export * from "./Figma"
+export * from "./Git"
+export * from "./MongoDB"
+export * from "./Nest"
+export * from "./Node"
+export * from "./Postgresql"
+export * from "./Sass"
+export * from "./Socket"
+export * from "./Storybook"
+export * from "./Tailwindcss"
