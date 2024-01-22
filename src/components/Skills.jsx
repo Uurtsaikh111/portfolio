@@ -1,4 +1,18 @@
-import { Cypress, Express, Figma, Git, Javascript, Next, Node, React, Sass, Socket, Storybook, Tailwindcss, Typescript } from "./icons/icon";
+import { Git } from "./icons/Git";
+import {
+  Cypress,
+  Express,
+  Figma,
+  Javascript,
+  Next,
+  Node,
+  React,
+  Sass,
+  Socket,
+  Storybook,
+  Tailwindcss,
+  Typescript,
+} from "./icons/icon";
 
 export function Skills() {
   return (
@@ -10,19 +24,18 @@ export function Skills() {
         </div>
         <div className="flex flex-col gap-[48px] self-stretch ">
           <div>
-           
-            <Javascript/>
-         <Figma/>
-         <Cypress/>
-         <Express/>
-         <Git/>
-         <Javascript/>
-         <Node/>
-         <React/>
-         <Sass/>
-         <Socket/>
-         <Storybook/>
-         <Typescript/>
+            <Javascript />
+            <Figma />
+            <Cypress />
+            <Express />
+            <Git />
+            <Javascript />
+            <Node />
+            <React />
+            <Sass />
+            <Socket />
+            <Storybook />
+            <Typescript />
           </div>
           <div></div>
         </div>
