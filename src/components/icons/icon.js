@@ -1,7 +1,6 @@
 export * from "./Location";
 export * from "./Figma";
 export * from "./Javascript";
-export * from "./Next";
 export * from "./Cypress";
 export * from "./Express";
 export * from "./MongoDB";
@@ -13,3 +12,5 @@ export * from "./Socket";
 export * from "./Storybook";
 export * from "./Tailwindcss";
 export * from "./Typescript";
+export * from "./Git";
+export * from "./Upwork"
