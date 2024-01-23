@@ -1,3 +1,4 @@
+import { useTheme } from "@/context/ChangeTheme";
 import { Upwork } from "./icons/icon";
 
 export function Experience() {
@@ -31,19 +32,32 @@ export function Experience() {
         },
       ];
 
+      const elements = experienceCards.map((a) => {
+        return (
+         
+          <p>{a.dates}</p>
+       
+         
+        );
+      });
 
+   const {theme}=useTheme();
 
-   
+   const hClassName =
+   theme == "light" ? "px-[20px] py-[4px] bg-gray-200 rounded-xl" : 
+   " px-[20px] py-[4px] bg-gray-700 text-white rounded-xl";
 
 
     return (
       <div className="container px-[80px] py-[96px] ">
         <div className="flex flex-col gap-[48px] px-[32px] py-[0px] justify-center">
         <div className="flex flex-col gap-[16px] items-center ">
-          <h2 className="px-[20px] py-[4px] bg-gray-200 rounded-xl">Experience </h2>
+          <h2 className={hClassName}>Experience </h2>
           <p>Here is a quick summary of my most recent experiences:</p>
         </div>
-        <div></div>
+        <div>
+          {elements}
+        </div>
         
         </div>
       </div>

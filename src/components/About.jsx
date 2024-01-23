@@ -1,8 +1,19 @@
+import { useTheme } from "@/context/ChangeTheme";
+
 export function About() {
+  const {theme} = useTheme();
+  const containerClassName =
+  theme == "light" ? "max-w-[1440px] mx-auto  px-[80px] py-[96px] bg-gray-100" : 
+  " max-w-[1440px] mx-auto bg-black px-[80px] py-[96px] bg-gray-900 text-white";
+
+  const hClassName =
+  theme == "light" ? "px-[20px] py-[4px] bg-gray-200 rounded-xl" : 
+  " px-[20px] py-[4px] bg-gray-700 text-white rounded-xl";
+
   return (
-    <div className="container px-[80px] py-[96px] bg-gray-100">
+    <div className={containerClassName}>
       <div className="flex flex-col gap-[48px] px-[32px] py-[0px] items-center">
-        <h2 className=" px-[20px] py-[4px] bg-gray-200 rounded-xl">About me</h2>
+        <h2 className={hClassName}>About me</h2>
         <div className="flex justify-between w-[100%] gap-[48px]">
           <img
             className="w-[400px] h-[480px] shadow-[-23px_23px_0px_0px_#00000024]"

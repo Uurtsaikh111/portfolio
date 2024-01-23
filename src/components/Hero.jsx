@@ -1,9 +1,20 @@
+import { useTheme } from "@/context/ChangeTheme";
 import { Location } from "./icons/icon";
 
 export function Hero() {
+  const {theme,} = useTheme();
+  const divClassName =
+  theme == "light" ? "flex justify-between w-[100%] px-[32px] mx-[80px] my-[96px] " : 
+  "flex justify-between text-white bg-black w-[100%] px-[32px] mx-[80px] my-[96px] ";
+
+  const containerClassName =
+  theme == "light" ? "flex gap-[48] max-w-[1440px] mx-auto bg-white " : 
+  "flex gap-[48] max-w-[1440px] mx-auto bg-black";
+
+
   return (
-    <div className="container flex gap-[48]">
-      <div className="flex justify-between w-[100%] px-[32px] mx-[80px] my-[96px] ">
+    <div className={containerClassName}>
+      <div className={divClassName}>
         <div className="flex flex-col w-[768px] h-[360px] gap-[48px]">
           <div className="flex flex-col gap-[8px]">
             <h1>Hi, I’m Sagar 👋</h1>
