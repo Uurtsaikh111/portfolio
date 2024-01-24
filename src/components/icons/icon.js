@@ -13,4 +13,6 @@ export * from "./Storybook";
 export * from "./Tailwindcss";
 export * from "./Typescript";
 export * from "./Git";
-export * from "./Upwork"
+export * from "./Upwork";
+export * from "./NightThemeButton";
+export * from "./LightThemeButton";
