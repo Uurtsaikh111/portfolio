@@ -1,4 +1,6 @@
-import { About, Experience, Header, Hero, Skills } from "@/components";
+import { About, ContactMe, Experience, Header, Hero, Skills, Work } from "@/components";
+
+
 import { useTheme } from "@/context/ChangeTheme";
 
 export default function Portfolia() {
@@ -12,6 +14,8 @@ export default function Portfolia() {
       <About />
       <Skills />
       <Experience />
+      <Work/>
+      <ContactMe/>
     </div>
   );
 }

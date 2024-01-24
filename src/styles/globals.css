@@ -26,6 +26,13 @@
   h5 {
     @apply text-[30px] leading-[36px]  text-gray-900;
   }
+  h7 {
+    @apply text-[20px] font-semibold leading-[28px]  text-gray-900;
+  }
+  li {
+    @apply  text-gray-600
+    text-base;;
+  }
 }
 
 @layer components {

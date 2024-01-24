@@ -1,10 +1,10 @@
 import { useTheme } from "@/context/ChangeTheme";
-import { Upwork } from "./icons/icon";
+import { Upwork} from "./icons/icon";
 
 export function Experience() {
   const experienceCards = [
     {
-      item: 1,
+      
       images: <Upwork />,
       h1: "Sr. Frontend Developer",
       p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -14,7 +14,7 @@ export function Experience() {
       dates: "Nov 2021 - Present",
     },
     {
-      item: 2,
+      
       images: <Upwork />,
       h1: "Team Lead",
       p1: "Sed quis justo ac magna.",
@@ -24,7 +24,7 @@ export function Experience() {
       dates: "Jul 2017 - Oct 2021",
     },
     {
-      item: 3,
+      
       images: <Upwork />,
       h1: "Full Stack Developer",
       p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -34,20 +34,29 @@ export function Experience() {
 
   const elements = experienceCards.map((a) => {
     return (
-      <div>
-        {a.images}
+      <div className="flex justify-between m-auto px-[32px] py-[32px] gap-[48px]">
         <div>
-          <h1>{a.h1}</h1>
-          <p>{a.p1}</p>
+          <div className=" ">{a.images}</div>
         </div>
-        <p>{a.dates}</p>
+        
+        <div className="  flex flex-col gap-4">
+          <h7>{a.h1}</h7>
+          <ul className="w-96">
+            <li>{a.p1}</li>
+            <li>{a.p2}</li>
+            <li>{a.p3}</li>
+            <li>{a.p4}</li>
+          </ul>
+        </div>
+        <div>
+          <p>{a.dates}</p>
+        </div>
+        
       </div>
     );
   });
-
-  const { theme } = useTheme();
-
-  const hClassName =
+const { theme } = useTheme();
+const hClassName =
     theme == "light"
       ? "px-[20px] py-[4px] bg-gray-200 rounded-xl"
       : " px-[20px] py-[4px] bg-gray-700 text-white rounded-xl";
@@ -60,6 +69,7 @@ export function Experience() {
           <p>Here is a quick summary of my most recent experiences:</p>
         </div>
         <div>{elements}</div>
+        
       </div>
     </div>
   );

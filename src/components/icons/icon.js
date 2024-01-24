@@ -16,3 +16,6 @@ export * from "./Git";
 export * from "./Upwork";
 export * from "./NightThemeButton";
 export * from "./LightThemeButton";
+export * from "./WorkImg"
+export * from "./WorkIcon"
+export * from "./Burger"
