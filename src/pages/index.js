@@ -1,9 +1,10 @@
-import Portfolia from "./portfolia";
+
+import Portfolia from "./Portfolia";
 
 export default function Home() {
   return (
     <div>
-      <Portfolia />
+      <Portfolia/>
     </div>
   );
 }
